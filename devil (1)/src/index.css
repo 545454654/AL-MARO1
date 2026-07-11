@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --primary-bg: #05080f;
+  --secondary-bg: rgba(10, 25, 50, 0.4);
+  --accent-red: #FF0800;
+  --accent-blue: #00d2ff;
+  --accent-green: #39ff14;
+  --accent-yellow: #ffc300;
+  --text-primary: #f0f0f0;
+  --text-secondary: #8a9bc7;
+  --glow-red: rgba(255, 8, 0, 0.7);
+  --glow-green: rgba(57, 255, 20, 0.7);
+}
+
+body {
+  font-family: 'Almarai', sans-serif;
+  background-color: #000;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-red);
+  border-radius: 3px;
+}
+
+/* Custom sweetalert style overrides */
+.swal2-popup.custom-swal {
+  background: #0a1932 !important;
+  border: 2px solid #FF0800 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 0 30px rgba(255, 8, 0, 0.5) !important;
+  color: white !important;
+  font-family: 'Almarai', sans-serif !important;
+}
+
+.swal2-popup.custom-swal-success {
+  border-color: #00ff00 !important;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.4) !important;
+}
+
+.swal2-title.custom-swal-title {
+  color: #FF0800 !important;
+  font-weight: bold !important;
+  font-size: 1.5rem !important;
+}
+
+.swal2-title.custom-swal-title-success {
+  color: #00ff00 !important;
+}
+
+.swal2-html-container.custom-swal-text {
+  color: white !important;
+  font-size: 1.1rem !important;
+}
+
+.swal2-confirm.custom-swal-btn {
+  background-color: #FF0800 !important;
+  color: black !important;
+  font-weight: bold !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 10px 24px !important;
+}
+
+.swal2-confirm.custom-swal-btn-success {
+  background-color: #00ff00 !important;
+  color: black !important;
+}
+
